@@ -253,3 +253,11 @@ w
 G.idea/sonarlint/issuestore/0/0/001ebd9563c0ad48418e61ac74e3fba4f3a9a7e6,e\1\e1f7ec16a4aa356b716147be4a53bbb8da8c0509
 w
 G.idea/sonarlint/issuestore/0/6/06cd507ff43caa153a8531707570ecb58886af54,a\3\a30a39783f98e25ea1a543c1352a8c5a530ffe38
+w
+GEx_Files_Learning_Selenium/Exercise Files/Ch02/02_04/start/Gemfile.lock,d\7\d7bb07bd0d0f05052e75a5cb6a1fe98b22757bf9
+y
+IEx_Files_Learning_Selenium/Exercise Files/Ch03/03_03/start/signup_page.rb,9\0\90d85629789128da109bbe044cd3f004bd21fac3
+x
+HEx_Files_Learning_Selenium/Exercise Files/Ch03/03_03/start/users_page.rb,8\a\8afcbe76b1cb4029bce3d14606c94368df0a535a
+w
+GEx_Files_Learning_Selenium/Exercise Files/Ch03/03_02/start/Gemfile.lock,3\a\3afd1216a17b80325f63652001528eb430e14aa9
