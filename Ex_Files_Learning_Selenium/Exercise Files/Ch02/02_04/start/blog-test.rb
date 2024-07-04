@@ -1,12 +1,22 @@
 require "selenium-webdriver"
+require "selenium/server"
 require "rspec"
 
 # TEST: Sign up for blog
 describe "Blog application:" do
   describe "signup to the blog application" do
+      let(:target_directory) { File.join(Dir.tmpdir, SecureRandom.uuid) }
+      let(:wait) { Selenium::WebDriver::Wait.new(timeout: 2) }
+      let(:server) do
+        Selenium::Server.get(:latest,
+            background: true,
+            args: %w[--selenium-manager true --enable-managed-downloads true])
+    end
+    let(:grid_url) { server.webdriver_url }
     it "confirm that a user can successfully signup" do
       	timestamp = Time.now.to_i
-      	driver = Selenium::WebDriver.for :firefox
+      	options = Selenium::WebDriver::Options.firefox
+        driver = Selenium::WebDriver.for :remote, url: grid_url, options: options
       	# Go to signup form
 		driver.navigate.to "https://selenium-blog.herokuapp.com/signup"
 		# Fill out and submit form
